@@ -6,11 +6,12 @@ const spanEl = document.querySelector(`#value`);
 
 
 
-decrementBtnEl.addEventListener("click", () => { 
-    counterValue -=1;
-    spanEl.textContent = counterValue;});
+decrementBtnEl.addEventListener("click", () => {
+    counterValue -= 1;
+    spanEl.textContent = counterValue;
+});
 
 incrementBtnEl.addEventListener("click", () => {
-    counterValue +=1;
+    counterValue += 1;
     spanEl.textContent = counterValue;
 });

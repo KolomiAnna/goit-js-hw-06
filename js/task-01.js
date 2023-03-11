@@ -7,12 +7,12 @@ console.log(`Number of categories: ${lengtItemsEl}`);
 
 
 
-// const categoriesEl = document.querySelectorAll("#categories");
-
-// const ItemsFirstChildEl = categoriesEl.nextSibling;
+const titleTextEl = document.querySelectorAll("h2");
 
 
-const titleTextEl = document.querySelector("h2");
-console.log(titleTextEl.nextElementSibling);
+titleTextEl.forEach((element) => {
+    console.group(`Category: ${element.textContent}`);
 
-// titleTextEl.forEach((el) =>{console.log(el)} );
+    console.log(`Elements: ${element.nextElementSibling.children.length}`);
+    console.groupEnd();
+})

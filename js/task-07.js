@@ -1,12 +1,13 @@
 const inputEl = document.querySelector(`#font-size-control`);
 const textEl = document.querySelector(`#text`);
 
-const inputMinSize = Number(inputEl.getAttribute("min"));
-const inputMaxSize = Number(inputEl.getAttribute("max"));
-console.log(inputMinSize, inputMaxSize);
+
+textEl.style.fontSize = inputEl.value + "px";
 
 inputEl.addEventListener("input", handleImputChange);
 
-function handleImputChange (event) {
+function handleImputChange(event) {
     textEl.style.fontSize = event.currentTarget.value + "px";
 }
+
+
